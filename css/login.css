@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #519CFA;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg,#051367,#2D31FA);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fonte);
+}
+
+.cabecalho {
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.botao__voltar {
+    background: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 10vw;
+    height: 10vw;
+    margin: 3vw 0 0 3vw;
+    font-size: 1.2em;
+}
+
+.botao__voltar:hover {
+    cursor: pointer;
+}
+
+.principal {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login {
+    background-color: var(--cor-principal);
+    border-radius: 4vh;
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+.login__texto-titulo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.box__label-input {
+    padding: 0 3vh 0 3vh;
+    margin-bottom: 5vh;
+    font-size: 0.8em;
+}
+
+.login__label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+.login__input {
+    width: 96%;
+    padding: 0 0 0 4%;
+    height: 5vh;
+}
+
+.caixa__botao-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao__login {
+    background: var(--cor-secundaria);
+    width: 45vw;
+    height: 6vh;
+    border-radius: 4vh;
+    margin-top: -8vh;
+}
+
+.botao__login:hover {
+    cursor: pointer;
+}
+
+
