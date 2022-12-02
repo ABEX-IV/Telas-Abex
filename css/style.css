@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --font-family: 'quicksand', sans-serif;
-    --cor-destaque: #519CFA;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #519CFA;
+    --fonte: 'Poppins', sans-serif;
 }
 
 .cabecalho {
     margin: 12vw 5vw 0 5vw;
     display: flex;
     justify-content: space-between;
-    font-family: var(--font-family);
     align-items: center;
 }
 
@@ -55,4 +55,138 @@
     width: 45vw;
     height: 50vw;
     border-radius: 5vw;
+}
+
+/* telas relacionadas a login */
+
+.tela__login {
+    background: linear-gradient(45deg,#051367,#2D31FA);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fonte);
+}
+
+.cabecalho__login {
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.botao__voltar {
+    background: var(--cor-secundaria);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 10vw;
+    height: 10vw;
+    margin: 3vw 0 0 3vw;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.principal__login {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login__botaoAzul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-secundaria);
+    width: 45vw;
+    height: 5.5vh;
+    border-radius: 4vh;
+    cursor:pointer;
+}
+
+.login__botaoBranco {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh auto 16vh auto;
+    cursor:pointer;
+}
+
+.box__input {
+    padding: 0 3vh 0 3vh;
+    margin-bottom: 5vh;
+    font-size: 0.8em;
+}
+
+.label__login {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+.input__login {
+    width: 96%;
+    padding: 0 0 0 4%;
+    height: 5vh;
+}
+
+/* particularidades da tela de menuLogin */
+
+.fundo__branco__menuLogin {
+    background: var(--cor-principal);
+    border-radius: 4vh;
+    width: 70vw;
+    height: 70vh;
+    display:grid;
+    grid-template-rows: 1fr 1fr auto auto;
+    justify-content: center;
+}
+
+.menuLogin__nome-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.menuLogin__mensagem {
+    display: flex;
+    justify-content: center;
+}
+
+/* Particularidades da tela de login */
+
+.fundo__branco__login {
+    background-color: var(--cor-principal);
+    border-radius: 4vh;
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+.texto-titulo__login {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.box-botao__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* particularidades da tela de cadastro */
+
+.fundo__branco__cadastro {
+    background-color: var(--cor-principal);
+    border-radius: 4vh;
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
 }
