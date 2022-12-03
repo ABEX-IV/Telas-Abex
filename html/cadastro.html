@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <script src="https://kit.fontawesome.com/66e2bd2ca0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Cadastrar-se</title>
 </head>
@@ -17,23 +16,25 @@
     </header>
     <main class="principal__login">
         <div class="fundo__branco__cadastro">
-            <div>
+            <div class="texto-titulo__login">
                 <p>Cadastrar-se</p>
             </div>
             <div>
-                <label for="Nome">Nome</label>
-                <input type="text" id="Nome">
+                <div class="box__input">
+                    <label class="label__login" for="Nome">Nome</label>
+                    <input class="input__login" type="text" id="Nome" placeholder="Insira seu nome">
+                </div>
+                <div class="box__input">
+                    <label class="label__login" for="Email">Email</label>
+                    <input class="input__login" type="email" id="Email" placeholder="Insira seu email">
+                </div>
+                <div class="box__input">
+                    <label class="label__login" for="Senha">Senha</label>
+                    <input class="input__login" type="text" id="Senha" placeholder="Insira sua senha"> 
+                </div>
             </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="email" id="Email">
-            </div>
-            <div>
-                <label for="Senha">Senha</label>
-                <input type="password" id="Senha"> 
-            </div>
-            <div>
-                <button>Cadastrar-se</button>
+            <div class="box-botao">
+                <button class="login__botaoAzul" >Cadastrar-se</button>
             </div>
         </div>
     </main>

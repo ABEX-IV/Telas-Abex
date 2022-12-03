@@ -92,6 +92,15 @@
     align-items: flex-start;
 }
 
+.texto-titulo__login {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
 .login__botaoAzul {
     display:flex;
     justify-content: center;
@@ -120,7 +129,7 @@
 .label__login {
     display: inline-block;
     margin-bottom: 0.5em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .input__login {
@@ -165,16 +174,7 @@
     grid-template-rows: 1fr auto 1fr;
 }
 
-.texto-titulo__login {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-.box-botao__login {
+.box-botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,5 +188,5 @@
     height: 70vh;
     width: 70vw;
     display: grid;
-    grid-template-columns: auto 1fr 1fr 1fr auto;
-}
+    grid-template-rows: 1fr auto 1fr;
+}          
